@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
   KEY `comment_author_email` (`comment_author_email`(10))
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Dumping data for table wordpress-nguyenhuuchuc.wp_comments: ~1 rows (approximately)
+-- Dumping data for table wordpress-nguyenhuuchuc.wp_comments: ~0 rows (approximately)
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
 	(1, 1, 'A WordPress Commenter', 'wapuu@wordpress.example', 'https://wordpress.org/', '', '2026-09-11 01:24:18', '2026-09-11 01:24:18', 'Hi, this is a comment.\nTo get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.\nCommenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.', 0, '1', '', 'comment', 0, 0);
 
@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   KEY `autoload` (`autoload`)
 ) ENGINE=InnoDB AUTO_INCREMENT=214 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Dumping data for table wordpress-nguyenhuuchuc.wp_options: ~160 rows (approximately)
+-- Dumping data for table wordpress-nguyenhuuchuc.wp_options: ~154 rows (approximately)
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 	(1, 'cron', 'a:11:{i:1789097057;a:1:{s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1789097067;a:1:{s:34:"wp_privacy_delete_old_export_files";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1789133079;a:1:{s:21:"wp_update_user_counts";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1789136657;a:1:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1789138457;a:1:{s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1789176266;a:2:{s:30:"wp_site_health_scheduled_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"weekly";s:4:"args";a:0:{}s:8:"interval";i:604800;}}s:32:"recovery_mode_clean_expired_keys";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1789176267;a:1:{s:41:"wp_privacy_personal_data_cleanup_requests";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1789176279;a:2:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}s:25:"delete_expired_transients";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1789176288;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1789697676;a:1:{s:30:"wp_delete_temp_updater_backups";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"weekly";s:4:"args";a:0:{}s:8:"interval";i:604800;}}}s:7:"version";i:2;}', 'on'),
 	(2, 'siteurl', 'https://wordpress-581.net', 'on'),
@@ -204,7 +204,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 	(102, 'initial_db_version', '61833', 'on'),
 	(103, 'wp_user_roles', 'a:5:{s:13:"administrator";a:2:{s:4:"name";s:13:"Administrator";s:12:"capabilities";a:61:{s:13:"switch_themes";b:1;s:11:"edit_themes";b:1;s:16:"activate_plugins";b:1;s:12:"edit_plugins";b:1;s:10:"edit_users";b:1;s:10:"edit_files";b:1;s:14:"manage_options";b:1;s:17:"moderate_comments";b:1;s:17:"manage_categories";b:1;s:12:"manage_links";b:1;s:12:"upload_files";b:1;s:6:"import";b:1;s:15:"unfiltered_html";b:1;s:10:"edit_posts";b:1;s:17:"edit_others_posts";b:1;s:20:"edit_published_posts";b:1;s:13:"publish_posts";b:1;s:10:"edit_pages";b:1;s:4:"read";b:1;s:8:"level_10";b:1;s:7:"level_9";b:1;s:7:"level_8";b:1;s:7:"level_7";b:1;s:7:"level_6";b:1;s:7:"level_5";b:1;s:7:"level_4";b:1;s:7:"level_3";b:1;s:7:"level_2";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:17:"edit_others_pages";b:1;s:20:"edit_published_pages";b:1;s:13:"publish_pages";b:1;s:12:"delete_pages";b:1;s:19:"delete_others_pages";b:1;s:22:"delete_published_pages";b:1;s:12:"delete_posts";b:1;s:19:"delete_others_posts";b:1;s:22:"delete_published_posts";b:1;s:20:"delete_private_posts";b:1;s:18:"edit_private_posts";b:1;s:18:"read_private_posts";b:1;s:20:"delete_private_pages";b:1;s:18:"edit_private_pages";b:1;s:18:"read_private_pages";b:1;s:12:"delete_users";b:1;s:12:"create_users";b:1;s:17:"unfiltered_upload";b:1;s:14:"edit_dashboard";b:1;s:14:"update_plugins";b:1;s:14:"delete_plugins";b:1;s:15:"install_plugins";b:1;s:13:"update_themes";b:1;s:14:"install_themes";b:1;s:11:"update_core";b:1;s:10:"list_users";b:1;s:12:"remove_users";b:1;s:13:"promote_users";b:1;s:18:"edit_theme_options";b:1;s:13:"delete_themes";b:1;s:6:"export";b:1;}}s:6:"editor";a:2:{s:4:"name";s:6:"Editor";s:12:"capabilities";a:34:{s:17:"moderate_comments";b:1;s:17:"manage_categories";b:1;s:12:"manage_links";b:1;s:12:"upload_files";b:1;s:15:"unfiltered_html";b:1;s:10:"edit_posts";b:1;s:17:"edit_others_posts";b:1;s:20:"edit_published_posts";b:1;s:13:"publish_posts";b:1;s:10:"edit_pages";b:1;s:4:"read";b:1;s:7:"level_7";b:1;s:7:"level_6";b:1;s:7:"level_5";b:1;s:7:"level_4";b:1;s:7:"level_3";b:1;s:7:"level_2";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:17:"edit_others_pages";b:1;s:20:"edit_published_pages";b:1;s:13:"publish_pages";b:1;s:12:"delete_pages";b:1;s:19:"delete_others_pages";b:1;s:22:"delete_published_pages";b:1;s:12:"delete_posts";b:1;s:19:"delete_others_posts";b:1;s:22:"delete_published_posts";b:1;s:20:"delete_private_posts";b:1;s:18:"edit_private_posts";b:1;s:18:"read_private_posts";b:1;s:20:"delete_private_pages";b:1;s:18:"edit_private_pages";b:1;s:18:"read_private_pages";b:1;}}s:6:"author";a:2:{s:4:"name";s:6:"Author";s:12:"capabilities";a:10:{s:12:"upload_files";b:1;s:10:"edit_posts";b:1;s:20:"edit_published_posts";b:1;s:13:"publish_posts";b:1;s:4:"read";b:1;s:7:"level_2";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:12:"delete_posts";b:1;s:22:"delete_published_posts";b:1;}}s:11:"contributor";a:2:{s:4:"name";s:11:"Contributor";s:12:"capabilities";a:5:{s:10:"edit_posts";b:1;s:4:"read";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:12:"delete_posts";b:1;}}s:10:"subscriber";a:2:{s:4:"name";s:10:"Subscriber";s:12:"capabilities";a:2:{s:4:"read";b:1;s:7:"level_0";b:1;}}}', 'on'),
 	(104, 'fresh_site', '0', 'off'),
-	(105, 'user_count', '2', 'off'),
+	(105, 'user_count', '7', 'off'),
 	(106, 'widget_block', 'a:6:{i:2;a:1:{s:7:"content";s:19:"<!-- wp:search /-->";}i:3;a:1:{s:7:"content";s:154:"<!-- wp:group --><div class="wp-block-group"><!-- wp:heading --><h2>Recent Posts</h2><!-- /wp:heading --><!-- wp:latest-posts /--></div><!-- /wp:group -->";}i:4;a:1:{s:7:"content";s:227:"<!-- wp:group --><div class="wp-block-group"><!-- wp:heading --><h2>Recent Comments</h2><!-- /wp:heading --><!-- wp:latest-comments {"displayAvatar":false,"displayDate":false,"displayExcerpt":false} /--></div><!-- /wp:group -->";}i:5;a:1:{s:7:"content";s:146:"<!-- wp:group --><div class="wp-block-group"><!-- wp:heading --><h2>Archives</h2><!-- /wp:heading --><!-- wp:archives /--></div><!-- /wp:group -->";}i:6;a:1:{s:7:"content";s:150:"<!-- wp:group --><div class="wp-block-group"><!-- wp:heading --><h2>Categories</h2><!-- /wp:heading --><!-- wp:categories /--></div><!-- /wp:group -->";}s:12:"_multiwidget";i:1;}', 'auto'),
 	(107, 'sidebars_widgets', 'a:4:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:3:{i:0;s:7:"block-2";i:1;s:7:"block-3";i:2;s:7:"block-4";}s:9:"sidebar-2";a:2:{i:0;s:7:"block-5";i:1;s:7:"block-6";}s:13:"array_version";i:3;}', 'auto'),
 	(108, 'widget_pages', 'a:1:{s:12:"_multiwidget";i:1;}', 'auto'),
@@ -275,7 +275,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=144 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Dumping data for table wordpress-nguyenhuuchuc.wp_postmeta: ~75 rows (approximately)
+-- Dumping data for table wordpress-nguyenhuuchuc.wp_postmeta: ~58 rows (approximately)
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 	(1, 2, '_wp_page_template', 'default'),
 	(2, 3, '_wp_page_template', 'default'),
@@ -500,7 +500,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
   KEY `term_taxonomy_id` (`term_taxonomy_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Dumping data for table wordpress-nguyenhuuchuc.wp_term_relationships: ~16 rows (approximately)
+-- Dumping data for table wordpress-nguyenhuuchuc.wp_term_relationships: ~14 rows (approximately)
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
 	(1, 1, 0),
 	(6, 2, 0),
@@ -553,9 +553,9 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=184 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Dumping data for table wordpress-nguyenhuuchuc.wp_usermeta: ~38 rows (approximately)
+-- Dumping data for table wordpress-nguyenhuuchuc.wp_usermeta: ~95 rows (approximately)
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
 	(1, 1, 'nickname', 'admin'),
 	(2, 1, 'first_name', ''),
@@ -594,7 +594,82 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 	(97, 2, 'wp_dashboard_quick_press_last_post_id', '54'),
 	(98, 2, 'community-events-location', 'a:1:{s:2:"ip";s:9:"127.0.0.0";}'),
 	(107, 2, 'session_tokens', 'a:1:{s:64:"57c2fd36751f6e009da4a3f683fcdda0ec74a482d8f58d2870fff4a2b84c3e33";a:4:{s:10:"expiration";i:1789266459;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:111:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36";s:5:"login";i:1789093659;}}'),
-	(108, 2, 'wp_persisted_preferences', 'a:3:{s:4:"core";a:2:{s:26:"isComplementaryAreaVisible";b:1;s:10:"openPanels";a:2:{i:0;s:11:"post-status";i:1;s:23:"taxonomy-panel-category";}}s:9:"_modified";s:24:"2026-09-11T03:12:19.459Z";s:14:"core/edit-post";a:1:{s:12:"welcomeGuide";b:0;}}');
+	(108, 2, 'wp_persisted_preferences', 'a:3:{s:4:"core";a:2:{s:26:"isComplementaryAreaVisible";b:1;s:10:"openPanels";a:2:{i:0;s:11:"post-status";i:1;s:23:"taxonomy-panel-category";}}s:9:"_modified";s:24:"2026-09-11T03:12:19.459Z";s:14:"core/edit-post";a:1:{s:12:"welcomeGuide";b:0;}}'),
+	(109, 7, 'nickname', 'user1'),
+	(110, 7, 'first_name', ''),
+	(111, 7, 'last_name', ''),
+	(112, 7, 'description', ''),
+	(113, 7, 'rich_editing', 'true'),
+	(114, 7, 'syntax_highlighting', 'true'),
+	(115, 7, 'infinite_scrolling', 'true'),
+	(116, 7, 'comment_shortcuts', 'false'),
+	(117, 7, 'admin_color', 'modern'),
+	(118, 7, 'use_ssl', '0'),
+	(119, 7, 'show_admin_bar_front', 'true'),
+	(120, 7, 'locale', ''),
+	(121, 7, 'wp_capabilities', 'a:1:{s:13:"administrator";b:1;}'),
+	(122, 7, 'wp_user_level', '10'),
+	(123, 7, 'dismissed_wp_pointers', ''),
+	(124, 8, 'nickname', 'user2'),
+	(125, 8, 'first_name', ''),
+	(126, 8, 'last_name', ''),
+	(127, 8, 'description', ''),
+	(128, 8, 'rich_editing', 'true'),
+	(129, 8, 'syntax_highlighting', 'true'),
+	(130, 8, 'infinite_scrolling', 'true'),
+	(131, 8, 'comment_shortcuts', 'false'),
+	(132, 8, 'admin_color', 'modern'),
+	(133, 8, 'use_ssl', '0'),
+	(134, 8, 'show_admin_bar_front', 'true'),
+	(135, 8, 'locale', ''),
+	(136, 8, 'wp_capabilities', 'a:1:{s:6:"editor";b:1;}'),
+	(137, 8, 'wp_user_level', '7'),
+	(138, 8, 'dismissed_wp_pointers', ''),
+	(139, 9, 'nickname', 'user3'),
+	(140, 9, 'first_name', ''),
+	(141, 9, 'last_name', ''),
+	(142, 9, 'description', ''),
+	(143, 9, 'rich_editing', 'true'),
+	(144, 9, 'syntax_highlighting', 'true'),
+	(145, 9, 'infinite_scrolling', 'true'),
+	(146, 9, 'comment_shortcuts', 'false'),
+	(147, 9, 'admin_color', 'modern'),
+	(148, 9, 'use_ssl', '0'),
+	(149, 9, 'show_admin_bar_front', 'true'),
+	(150, 9, 'locale', ''),
+	(151, 9, 'wp_capabilities', 'a:1:{s:6:"author";b:1;}'),
+	(152, 9, 'wp_user_level', '2'),
+	(153, 9, 'dismissed_wp_pointers', ''),
+	(154, 10, 'nickname', 'user4'),
+	(155, 10, 'first_name', ''),
+	(156, 10, 'last_name', ''),
+	(157, 10, 'description', ''),
+	(158, 10, 'rich_editing', 'true'),
+	(159, 10, 'syntax_highlighting', 'true'),
+	(160, 10, 'infinite_scrolling', 'true'),
+	(161, 10, 'comment_shortcuts', 'false'),
+	(162, 10, 'admin_color', 'modern'),
+	(163, 10, 'use_ssl', '0'),
+	(164, 10, 'show_admin_bar_front', 'true'),
+	(165, 10, 'locale', ''),
+	(166, 10, 'wp_capabilities', 'a:1:{s:11:"contributor";b:1;}'),
+	(167, 10, 'wp_user_level', '1'),
+	(168, 10, 'dismissed_wp_pointers', ''),
+	(169, 11, 'nickname', 'user5'),
+	(170, 11, 'first_name', ''),
+	(171, 11, 'last_name', ''),
+	(172, 11, 'description', ''),
+	(173, 11, 'rich_editing', 'true'),
+	(174, 11, 'syntax_highlighting', 'true'),
+	(175, 11, 'infinite_scrolling', 'true'),
+	(176, 11, 'comment_shortcuts', 'false'),
+	(177, 11, 'admin_color', 'modern'),
+	(178, 11, 'use_ssl', '0'),
+	(179, 11, 'show_admin_bar_front', 'true'),
+	(180, 11, 'locale', ''),
+	(181, 11, 'wp_capabilities', 'a:1:{s:10:"subscriber";b:1;}'),
+	(182, 11, 'wp_user_level', '0'),
+	(183, 11, 'dismissed_wp_pointers', '');
 
 -- Dumping structure for table wordpress-nguyenhuuchuc.wp_users
 DROP TABLE IF EXISTS `wp_users`;
@@ -613,12 +688,17 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
   KEY `user_login_key` (`user_login`),
   KEY `user_nicename` (`user_nicename`),
   KEY `user_email` (`user_email`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Dumping data for table wordpress-nguyenhuuchuc.wp_users: ~2 rows (approximately)
+-- Dumping data for table wordpress-nguyenhuuchuc.wp_users: ~7 rows (approximately)
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 	(1, 'admin', '$wp$2y$12$1x0oLDHDPyHWzfX/haOpjO.jRIARmn4khcIlnkkA7l2hnaEQ/h9kS', 'admin', 'admin@admin.com', 'https://wordpress-581.net', '2026-09-11 01:24:18', '', 0, 'admin'),
-	(2, 'Adminstrator', '$wp$2y$12$5mxgvkbjVl3d02PHcxWRMeP8d2RCXo3GNDqggDxBwOKxZ9MqguxSq', 'adminstrator', 'Adminstrator@gmail.com', '', '2026-09-11 02:12:05', '', 0, 'Adminstrator');
+	(2, 'Adminstrator', '$wp$2y$12$5mxgvkbjVl3d02PHcxWRMeP8d2RCXo3GNDqggDxBwOKxZ9MqguxSq', 'adminstrator', 'Adminstrator@gmail.com', '', '2026-09-11 02:12:05', '', 0, 'Adminstrator'),
+	(7, 'user1', '$wp$2y$12$BoF4VeorK17YxEdXz8GEbOhqj0AEbIKO.SHNJ.O6Hf.r9ZgsLqzS2', 'user1', 'user1@gmail.com', '', '2026-09-11 03:20:35', '1789096835:$generic$oZ1mKubZq28-BxrINLdlkG43nDBBMg8AO9hoZTCe', 0, 'user1'),
+	(8, 'user2', '$wp$2y$12$3N9gRTyj88CnCaRqGyeMGO/FN82JPaL9J0S51xMeZRgx1SoGUP/Jm', 'user2', 'user2@gmail.com', '', '2026-09-11 03:21:03', '1789096863:$generic$ceJR8gaYMmMB2CjKZXL941T7ual-smkRAKqVqIrp', 0, 'user2'),
+	(9, 'user3', '$wp$2y$12$dnqb34kv0dBjVNFKZTjwee3EtL9AE4nPj14AaWhjh46VTgny9Xupe', 'user3', 'user3@gmail.com', '', '2026-09-11 03:21:32', '1789096892:$generic$GX4zp6ZFfNtoBibm8rMwD917XwTbyOVlJj8_LxQV', 0, 'user3'),
+	(10, 'user4', '$wp$2y$12$ahVOTzogMUnm.RwCHjlSLeW6RozRMQ2rmAKLkXY8Jbc.Hv6og4iVS', 'user4', 'user4@gmail.com', '', '2026-09-11 03:22:07', '1789096927:$generic$z0dvAZ5nSesP8pIUR0idQ74alQFoC6Avb0NwKeWL', 0, 'user4'),
+	(11, 'user5', '$wp$2y$12$G5c.k2dkKwO3k3OsCxiUT.WWEmvqZirP/crxTnZnsVY348BSBw4Fy', 'user5', 'user5@gmail.com', '', '2026-09-11 03:22:33', '1789096953:$generic$pnm1llOxJD-5f2nSxAXrVFbjXYWS8zGfP6DJfnRl', 0, 'user5');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
